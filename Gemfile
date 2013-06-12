@@ -36,6 +36,17 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development, :test do
+  gem 'cane'
+  gem 'capybara'
+  gem 'debugger'
+  gem 'guard-rspec'
+  gem 'reek'
+  gem 'rspec-rails'
+  gem 'selenium-webdriver', '2.31.0'
+  gem 'simplecov'
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
