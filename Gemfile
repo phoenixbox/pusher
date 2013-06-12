@@ -5,7 +5,23 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# Databases
 gem 'sqlite3'
+gem 'pg'
+
+# External Services
+gem 'twitter'
+gem 'omniauth-twitter'
+
+# Others
+gem 'jquery-ui-rails'
+gem 'figaro'
+gem 'better_errors'
+gem 'binding_of_caller'
+gem 'pry'
+
+# Twitter Bootstrap
+gem "twitter-bootstrap-rails"
 
 
 # Gems used only for assets and not required
