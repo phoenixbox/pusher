@@ -37,7 +37,7 @@ feature "unauthenticated user wants to log in with twitter" do
 
       it "redirects to twitter authorization" do
         click_link("twitter-login")
-        expect(current_path).to eq users_path
+        expect(page).to have_content("Signed in")
       end
 
     end
