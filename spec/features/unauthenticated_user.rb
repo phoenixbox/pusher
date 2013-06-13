@@ -14,8 +14,13 @@ feature "unauthenticated user wants to log in with twitter" do
       }
     end
 
-    xit "has the headline" do
-      within(:css, )
+    it "has the headline" do
+      within(:css, "#banner-copy" ){
+        expect(page).to have_css('h1#headline')
+        expect(page).to have_css('h5#cover-copy')
+        expect(page).to have_content("Pushy")
+        expect(page).to have_content("Your simple private chat room")
+      }
     end
 
     it "has the twitter login button" do

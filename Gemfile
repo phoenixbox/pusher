@@ -48,7 +48,6 @@ group :development, :test do
   gem 'reek'
   gem 'rspec-rails'
   gem 'selenium-webdriver', '2.31.0'
-  gem 'simplecov'
 end
 
 gem 'jquery-rails'
