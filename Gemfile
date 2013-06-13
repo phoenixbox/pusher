@@ -37,10 +37,14 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'guard-rspec'
   gem 'cane'
   gem 'capybara'
   gem 'debugger'
-  gem 'guard-rspec'
+  gem 'factory_girl_rails', "~> 4.0"
+  gem 'launchy'
+  gem 'mock_redis'
+  gem 'rack_session_access'
   gem 'reek'
   gem 'rspec-rails'
   gem 'selenium-webdriver', '2.31.0'
