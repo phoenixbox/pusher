@@ -29,6 +29,19 @@ feature "unauthenticated user wants to log in with twitter" do
       }
     end
 
+    context "login with twitter with valid credentials" do
+      before(:each) do
+        visit "http://lvh.me:3000"
+        mock_auth_hash
+      end
+
+      it "redirects to twitter authorization" do
+        click_link("twitter-login")
+        expect(current_path).to eq users_path
+      end
+
+    end
+
   end #end of context
 
 end #end of feature

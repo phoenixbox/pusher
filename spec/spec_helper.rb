@@ -7,13 +7,11 @@ require 'capybara/rspec'
 require 'capybara/rails'
 require 'rack_session_access/capybara'
 
-# Requires supporting ruby files with custom matchers and macros, etc,
-# in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
-  # config.include(OmniauthMacros)
- 
+  config.include(OmniauthMacros)
+
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
   config.use_transactional_fixtures = true
@@ -24,4 +22,4 @@ RSpec.configure do |config|
 end
 
 Capybara.server_port = 1234
-# OmniAuth.config.test_mode = true
+OmniAuth.config.test_mode = true
